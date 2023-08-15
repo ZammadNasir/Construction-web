@@ -1,0 +1,163 @@
+:root{
+    --clr-primary: #ff5f13;
+    --clr-secondary: #161e46;
+    --clr-secondary-2: #00235b;
+    --clr-text-1: #444444;
+    --clr-text-2: #0e132a;
+    --clr-text-3: #868c98;
+    --clr-text-4: #282828;
+    --bg-opa: #191a33b6;
+
+    --fs-14: 14px;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button{
+    background-color: var(--clr-primary);
+    color: white;
+    border-radius: 5px;
+    padding: 12px 22px;
+    border: none;
+}
+.button[inverted]{
+    background-color: white;
+    color: var(--clr-secondary-2);
+    border-radius: 5px;
+    padding: 12px 22px;
+    border: none;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+}
+ul li{
+    color: gray;
+}
+.bc-primary{
+    background-color: var(--clr-primary);
+}
+.t-primary{
+    color: var(--clr-primary);
+}
+.t-white{
+    color: white;
+}
+.t-dark{
+    color: var(--clr-secondary-2);
+}
+.bc-dark{
+    background-color: var(--clr-secondary-2);
+}
+.t-light{
+    color: var(--clr-text-2);
+}
+.bg-secondary{
+    background-color: var(--clr-secondary);
+}
+.navbar{
+    background-color:  var(--bg-opa);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+.navbar-nav a{
+    color: white;
+}
+.navbar-nav a:hover{
+    color: #2361c5;
+}
+.services{
+    margin-top: 80px;
+}
+.services-inner > div{
+    border-bottom: 1px solid var(--clr-primary);
+    padding-bottom: 18px;
+}
+.services p{
+    text-align: start;
+    width: 34ch;
+}
+#about{
+    margin-top: 80px;
+}
+.projects{
+    margin-top: 80px;
+}
+.projects-inner .row div{
+    margin-top: 20px;
+}
+.projects-inner .row div p{
+    margin-top: 18px;
+    width: 20ch;
+}
+.talk{
+    margin-top: 80px;
+}
+.talk-inner{
+    background-color: #00235bef;
+    padding: 120px 100px;
+    position: relative;
+}
+.talk-inner .long-para{
+    width: 70ch;
+}
+.numbers{
+    position: absolute;
+    bottom: -50px;
+    padding: 20px 0;
+}
+#team{
+    margin-top: 140px;
+}
+#news{
+    margin-top: 80px;
+}
+footer{
+    margin-top: 180px;
+    padding: 80px 0;
+}
+footer ul li{
+    margin-top: 12px;
+    font-size: 12px;
+}
+footer button{
+    font-size: 12px;
+}
+.services-inner div.show {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+}
+
+.services-inner div {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+@media(max-width: 480px){
+    .talk-inner{
+        padding: 60px 0px;
+    }
+    .talk-inner .long-para{
+        width: 100%;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+}
